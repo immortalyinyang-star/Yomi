@@ -143,6 +143,7 @@ dependencies {
 
         implementation("com.github.YomiApp:kotatsu-parsers:$parsersVersion") {
                 exclude group: 'org.json', module: 'json'
+                transitive = true
         }
 
         coreLibraryDesugaring libs.desugar.jdk.libs
